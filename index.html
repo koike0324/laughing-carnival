@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pixel Defender</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell" aria-labelledby="game-title">
+      <section class="hero">
+        <p class="eyebrow">Retro Arcade</p>
+        <h1 id="game-title">Pixel Defender</h1>
+        <p class="lead">
+          迫り来るピクセル侵略者を撃ち落とそう。隊列が地上に到達する前に全滅させれば勝利です。
+        </p>
+      </section>
+
+      <section class="game-card" aria-label="インベーダーゲーム">
+        <div class="hud" aria-live="polite">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Lives</span><strong id="lives">3</strong></div>
+          <div><span>Level</span><strong id="level">1</strong></div>
+        </div>
+
+        <canvas id="game" width="900" height="620" aria-label="Pixel Defender game canvas"></canvas>
+
+        <div id="message" class="message is-visible">
+          <h2>Pixel Defender</h2>
+          <p>← → / A D で移動、Space でショット。Enter でスタート。</p>
+          <button id="start-button" type="button">ゲーム開始</button>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="操作方法">
+        <article>
+          <strong>移動</strong>
+          <span>← → または A / D</span>
+        </article>
+        <article>
+          <strong>攻撃</strong>
+          <span>Space</span>
+        </article>
+        <article>
+          <strong>再開</strong>
+          <span>Enter</span>
+        </article>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
