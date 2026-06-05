@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LINE風チャット - ホーム</title>
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1>LINE風チャット</h1>
+        <p class="subtitle">リアルタイム連絡サイト</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero-content">
+          <h2>リアルタイムコミュニケーション</h2>
+          <p>友達や同僚とすぐにメッセージを交換できる、シンプルで使いやすいチャットアプリです。</p>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>主な機能</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>リアルタイムメッセージ</h3>
+            <p>メッセージを送るとすぐに相手に届きます</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>マルチユーザー対応</h3>
+            <p>複数の人で同時にチャットができます</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⌨️</div>
+            <h3>タイピング表示</h3>
+            <p>相手がタイプ中であることがわかります</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔐</div>
+            <h3>ルーム機能</h3>
+            <p>プライベートなチャットルームを作成できます</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="join-section">
+        <h2>チャットを始める</h2>
+        <form id="joinForm" class="join-form">
+          <div class="form-group">
+            <label for="username">ユーザー名</label>
+            <input 
+              type="text" 
+              id="username" 
+              placeholder="あなたの名前を入力"
+              required
+              maxlength="20"
+            >
+          </div>
+          <div class="form-group">
+            <label for="room">ルーム名</label>
+            <input 
+              type="text" 
+              id="room" 
+              placeholder="ルーム名を入力（例：office, friends）"
+              required
+              maxlength="20"
+            >
+          </div>
+          <button type="submit" class="btn-join">チャットに入る</button>
+        </form>
+      </section>
+
+      <section class="info-section">
+        <h2>使い方</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">1</span>
+            <h4>ユーザー名を入力</h4>
+            <p>チャットで使用する名前を入力してください</p>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <h4>ルーム名を入力</h4>
+            <p>同じルーム名の人たちとつながります</p>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <h4>メッセージを送信</h4>
+            <p>ルーム内のメンバーとリアルタイムでチャットできます</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 LINE風チャット. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="js/home.js"></script>
+</body>
+</html>
